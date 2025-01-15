@@ -12,7 +12,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1 className="text-center text-2xl font-bold mb-4">User Directory</h1>
+      <h1 className="text-center text-2xl font-bold mb-4">Wisdom Peak Analytics</h1>
       <UserList />
     </div>
   );
