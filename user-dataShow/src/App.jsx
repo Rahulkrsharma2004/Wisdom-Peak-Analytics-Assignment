@@ -1,15 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import UserDetailPage from './pages/UserDetailPage';
 import { FiSun, FiMoon } from 'react-icons/fi';
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem('theme') === 'dark';
+  });
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', darkMode);
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.documentElement.classList.toggle('dark', !darkMode);
+    setDarkMode((prev) => !prev);
   };
 
   return (
