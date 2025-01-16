@@ -30,4 +30,5 @@ This project is a React.js application that fetches and displays a list of users
 1. Clone the repository:
    ```bash
    git clone https://github.com/Rahulkrsharma2004/Wisdom-Peak-Analytics-Assignment.git
-   cd Wisdom-Peak-Analytics-Assignment/user-Details
+   cd Wisdom-Peak-Analytics-Assignment/user-dataShow
+
