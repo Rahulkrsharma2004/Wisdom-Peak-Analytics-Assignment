@@ -22,7 +22,7 @@ const userSlice = createSlice({
       );
     },
     sortUsers: (state, action) => {
-      const sortOrder = action.payload; // 'asc' or 'desc'
+      const sortOrder = action.payload;
       state.filteredUsers = [...state.filteredUsers].sort((a, b) => {
         if (sortOrder === 'asc') return a.name.localeCompare(b.name);
         return b.name.localeCompare(a.name);
