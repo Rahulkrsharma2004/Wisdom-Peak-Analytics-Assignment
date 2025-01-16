@@ -3,6 +3,16 @@
 ## Overview
 This project is a React.js application that fetches and displays a list of users from an API. It allows searching and filtering through the user list and provides a detailed view for each user.
 
+## Tech Stack
+- React
+- Redux
+- HTML5
+- CSS3
+- Tailwind CSS
+- React-Router-DOM
+- React-Icons
+- Axios
+
 ## Getting Started
 
 ### Prerequisites
