@@ -11,7 +11,7 @@ const UserDetails = () => {
 
   return (
     <div className="mx-auto p-4 flex justify-center items-center">
-      <div className="border p-6 rounded-lg shadow-lg bg-white hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 transition duration-300 ease-in-out w-full max-w-md">
+      <div className="bg-red-100 border p-6 rounded-lg shadow-lg bg-white hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 transition duration-300 ease-in-out w-full max-w-md">
         <div className="mb-4">
           <h2 className="text-xl font-bold mb-2">{user.name}</h2>
           <p className="text-gray-600 dark:text-gray-300">Email: {user.email}</p>
