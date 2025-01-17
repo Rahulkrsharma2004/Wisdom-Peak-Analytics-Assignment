@@ -46,7 +46,6 @@ const UserList = () => {
 
   return (
     <div className="container mx-auto p-4">
-      {/* Search and Sort Controls */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
         <div className="relative w-full md:w-1/2">
           <MagnifyingGlassIcon className="absolute top-3 left-3 w-5 h-5 text-gray-500" />
@@ -75,7 +74,7 @@ const UserList = () => {
 
       <ul>
         {currentUsers.map((user) => (
-          <li key={user.id} className="mb-4 p-4 border rounded-lg shadow hover:shadow-md transition duration-300 bg-white/50 backdrop-blur-lg dark:bg-gray-800/50">
+          <li key={user.id} className="bg-red-100 mb-4 p-4 border rounded-lg shadow hover:shadow-md transition duration-300 bg-white/50 backdrop-blur-lg dark:bg-gray-800/50">
             <p className="text-xl font-bold">Name: {user.name}</p>
             <p className="text-gray-600 dark:text-gray-400">Email: {user.email}</p>
             <p className="text-gray-600 dark:text-gray-400">City: {user.address.city}</p>
